@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDeliveryApp.Api", "FoodDeliveryApp.Api\FoodDeliveryApp.Api.csproj", "{EBA47A74-48EE-46ED-A399-C54D4CA97612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA47A74-48EE-46ED-A399-C54D4CA97612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA47A74-48EE-46ED-A399-C54D4CA97612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA47A74-48EE-46ED-A399-C54D4CA97612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA47A74-48EE-46ED-A399-C54D4CA97612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA1E114B-CFB6-4FB8-8906-1CC921751E34}
+	EndGlobalSection
+EndGlobal
