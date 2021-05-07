@@ -195,3 +195,4 @@ C:\Users\chefa\Desktop\FoodDeliveryApp\FoodDeliveryApp\FoodDeliveryApp.Api\obj\D
 C:\Users\chefa\Desktop\FoodDeliveryApp\FoodDeliveryApp\FoodDeliveryApp.Api\obj\Debug\net5.0\ref\FoodDeliveryApp.Api.dll
 C:\Users\chefa\Desktop\FoodDeliveryApp\FoodDeliveryApp\FoodDeliveryApp.Api\obj\Debug\net5.0\FoodDeliveryApp.Api.pdb
 C:\Users\chefa\Desktop\FoodDeliveryApp\FoodDeliveryApp\FoodDeliveryApp.Api\obj\Debug\net5.0\FoodDeliveryApp.Api.genruntimeconfig.cache
+C:\Users\chefa\Desktop\FoodDeliveryApp\FoodDeliveryApp\FoodDeliveryApp.Api\obj\Debug\net5.0\FoodDeliveryApp.Api.csprojAssemblyReference.cache
