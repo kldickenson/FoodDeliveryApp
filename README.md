@@ -9,7 +9,7 @@
 
 
 ### How to run our app: 
-
+https://virtualcoffeefooddelivery.azurewebsites.net/
 
 #### Clone it yourself!
 1. Click the code button on the repo and copy the HTTPS link provided
