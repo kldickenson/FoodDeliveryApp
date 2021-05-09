@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VCFoodDeliveryApp", "VCFoodDeliveryApp\VCFoodDeliveryApp.csproj", "{2C648F2A-F106-41FC-8610-624D18DBADFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Debug|x64.Build.0 = Debug|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Debug|x86.Build.0 = Debug|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Release|x64.ActiveCfg = Release|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Release|x64.Build.0 = Release|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C648F2A-F106-41FC-8610-624D18DBADFE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BCDB41B-ECA3-4B1C-8A99-9BF89603BE9A}
+	EndGlobalSection
+EndGlobal
