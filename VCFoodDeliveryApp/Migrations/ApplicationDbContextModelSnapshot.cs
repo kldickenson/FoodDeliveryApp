@@ -292,9 +292,6 @@ namespace VCFoodDeliveryApp.Migrations
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ApplicationUser_Id")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("DeliveryTime")
                         .HasColumnType("datetime2");
 
@@ -361,11 +358,9 @@ namespace VCFoodDeliveryApp.Migrations
 
             modelBuilder.Entity("VCFoodDeliveryApp.Models.Cart", b =>
                 {
-                    b.HasOne("VCFoodDeliveryApp.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("VCFoodDeliveryApp.Models.ApplicationUser", null)
                         .WithMany("Carts")
                         .HasForeignKey("ApplicationUserId");
-
-                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("VCFoodDeliveryApp.Models.ApplicationUser", b =>

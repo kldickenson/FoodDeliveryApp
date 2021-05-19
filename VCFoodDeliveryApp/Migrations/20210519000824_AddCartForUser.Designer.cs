@@ -10,8 +10,8 @@ using VCFoodDeliveryApp.Data;
 namespace VCFoodDeliveryApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210513225324_Add Cart for user")]
-    partial class AddCartforuser
+    [Migration("20210519000824_AddCartForUser")]
+    partial class AddCartForUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -294,9 +294,6 @@ namespace VCFoodDeliveryApp.Migrations
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ApplicationUser_Id")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("DeliveryTime")
                         .HasColumnType("datetime2");
 
@@ -363,11 +360,9 @@ namespace VCFoodDeliveryApp.Migrations
 
             modelBuilder.Entity("VCFoodDeliveryApp.Models.Cart", b =>
                 {
-                    b.HasOne("VCFoodDeliveryApp.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("VCFoodDeliveryApp.Models.ApplicationUser", null)
                         .WithMany("Carts")
                         .HasForeignKey("ApplicationUserId");
-
-                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("VCFoodDeliveryApp.Models.ApplicationUser", b =>

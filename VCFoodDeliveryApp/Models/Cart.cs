@@ -12,10 +12,8 @@ namespace VCFoodDeliveryApp.Models
         public string Id { get; set; }
 
 
-        public string ApplicationUser_Id { get; set; }
+        public string ApplicationUserId { get; set; }
 
-
-        public ApplicationUser ApplicationUser { get; set; }
 
         public DateTime DeliveryTime { get; set; }
 

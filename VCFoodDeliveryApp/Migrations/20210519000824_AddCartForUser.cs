@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace VCFoodDeliveryApp.Migrations
 {
-    public partial class AddCartforuser : Migration
+    public partial class AddCartForUser : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,7 +20,6 @@ namespace VCFoodDeliveryApp.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
-                    ApplicationUser_Id = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ApplicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     DeliveryTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     OrderTotal = table.Column<double>(type: "float", nullable: false)
