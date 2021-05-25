@@ -7,22 +7,15 @@ namespace VCFoodDeliveryApp.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
-                name: "Cart_Id",
-                schema: "Identity",
-                table: "AspNetUsers",
-                type: "nvarchar(max)",
-                nullable: true);
-
             migrationBuilder.CreateTable(
                 name: "Cart",
                 schema: "Identity",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ApplicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     DeliveryTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    OrderTotal = table.Column<double>(type: "float", nullable: false)
+                    OrderTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,11 +41,6 @@ namespace VCFoodDeliveryApp.Migrations
             migrationBuilder.DropTable(
                 name: "Cart",
                 schema: "Identity");
-
-            migrationBuilder.DropColumn(
-                name: "Cart_Id",
-                schema: "Identity",
-                table: "AspNetUsers");
         }
     }
 }

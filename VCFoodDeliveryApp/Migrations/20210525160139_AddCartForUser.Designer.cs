@@ -10,7 +10,7 @@ using VCFoodDeliveryApp.Data;
 namespace VCFoodDeliveryApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210519000824_AddCartForUser")]
+    [Migration("20210525160139_AddCartForUser")]
     partial class AddCartForUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -213,9 +213,6 @@ namespace VCFoodDeliveryApp.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("Cart_Id")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -288,7 +285,6 @@ namespace VCFoodDeliveryApp.Migrations
             modelBuilder.Entity("VCFoodDeliveryApp.Models.Cart", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ApplicationUserId")
@@ -297,8 +293,8 @@ namespace VCFoodDeliveryApp.Migrations
                     b.Property<DateTime>("DeliveryTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("OrderTotal")
-                        .HasColumnType("float");
+                    b.Property<decimal>("OrderTotal")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
