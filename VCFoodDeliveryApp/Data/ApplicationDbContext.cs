@@ -48,5 +48,7 @@ namespace VCFoodDeliveryApp.Data
                 entity.ToTable("UserTokens");
             });
         }
+
+        public DbSet<Cart> Cart { get; set; }
     }
 }

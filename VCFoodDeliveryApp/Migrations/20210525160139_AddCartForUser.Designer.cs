@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VCFoodDeliveryApp.Data;
 
 namespace VCFoodDeliveryApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210525160139_AddCartForUser")]
+    partial class AddCartForUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -286,7 +288,6 @@ namespace VCFoodDeliveryApp.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ApplicationUserId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("DeliveryTime")
@@ -355,13 +356,9 @@ namespace VCFoodDeliveryApp.Migrations
 
             modelBuilder.Entity("VCFoodDeliveryApp.Models.Cart", b =>
                 {
-                    b.HasOne("VCFoodDeliveryApp.Models.ApplicationUser", "ApplicationUser")
+                    b.HasOne("VCFoodDeliveryApp.Models.ApplicationUser", null)
                         .WithMany("Carts")
-                        .HasForeignKey("ApplicationUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ApplicationUser");
+                        .HasForeignKey("ApplicationUserId");
                 });
 
             modelBuilder.Entity("VCFoodDeliveryApp.Models.ApplicationUser", b =>
