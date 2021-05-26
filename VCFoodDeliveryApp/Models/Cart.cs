@@ -12,9 +12,10 @@ namespace VCFoodDeliveryApp.Models
         public string Id { get; set; }
 
         [Required]
+        [ForeignKey("ApplicationUser")]
         public string ApplicationUserId { get; set; }
 
-        [ForeignKey("ApplicationUserId")]
+       
         public ApplicationUser ApplicationUser { get; set; }
 
         // User will chose when to get the item delivered based on food cook time and distance. I think there will be some calculations involved later
