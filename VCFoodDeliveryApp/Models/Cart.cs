@@ -11,14 +11,15 @@ namespace VCFoodDeliveryApp.Models
     {
         public string Id { get; set; }
 
-        [ForeignKey("ApplicationUser")]
+        [Required]
         public string ApplicationUserId { get; set; }
 
-        // User will chose when to get the item delivered based on food cook time and distance. I think there will be some calculations involed later
+        [ForeignKey("ApplicationUserId")]
+        public ApplicationUser ApplicationUser { get; set; }
+
+        // User will chose when to get the item delivered based on food cook time and distance. I think there will be some calculations involved later
         public DateTime DeliveryTime { get; set; }
-
-
-        [DataType(DataType.Currency)]
+        
         public decimal OrderTotal { get; set; }
 
     }
